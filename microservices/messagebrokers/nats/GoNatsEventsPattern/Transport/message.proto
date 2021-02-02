@@ -1,0 +1,7 @@
+syntax = "proto3";
+package Transport;
+
+message TextMessage {
+    int32 id = 1;
+    string body = 2;
+}

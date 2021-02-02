@@ -1,0 +1,24 @@
+# CREATE BOOK
+POST localhost:3000/books/create
+Content-Type: application/x-www-form-urlencoded
+
+isbn=978-1470184841&title=Metamorphosis&author=Franz Kafka&price=5.90
+
+###
+
+### GET ALL BOOKS
+GET http://localhost:3000/books
+//Accept: application/json
+
+### SHOW Book by ISBN
+GET http://localhost:3000/books/show?isbn=978-1505255607
+//Accept: application/json
+
+#### CREATE NEW BOOK
+#POST localhost:3000/books/create
+#Content-Type: application/x-www-form-urlencoded
+#isbn=978-1470184841&title=Metamorphosis&author=Franz Kafka&price=5.90
+
+####
+
+

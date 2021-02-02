@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd25b89b-ef20-4164-b419-0f2fcf739323" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/Projects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/dictionaries/will.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/go.imports.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearchWill.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/pkg/handlers/api_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/pkg/handlers/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/pkg/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/pkg/validators/isemailvalid.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aws/aws-lamda-in-go-lang/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/duplicateLines/dup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/echoStringsJoin/echo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetch/urlFetch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetchConcurrent/urlFetchConcurrent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServer/serverOne.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServerWithCounter/webServerWithCounter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch2/echo4/echo4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../concurrency/chanSelect3/chanSelect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../concurrency/chanTimeout/chanTimeout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dataFile1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/.idea/database.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/AEsql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dictionaries/will.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/RestApi_Gorm_JWT_PG/.idea/RestApi_Gorm_JWT_PG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/fyne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/basics/basics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/canvas/canvas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/kd/kd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/layout/layout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/widget/widget.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/interfaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helloer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/CreateEmptyFile/createEmptyFile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/data/testFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/directories/directories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/fileCreate/fileCreate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/.idea/templates.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/goLandEx/.idea/goLandEx.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/templateStdOut/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/writingWebApplications/goWikiWithHttp/.idea/goWikiWithHttp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../testFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbPersistence/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbPersistenceWithServer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/iFaceEx/interfaceExtended.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/iface/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/filterOddEven/filter.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/filterOddEven/filter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/linearSearch/linearSearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/linearSearch/linearSearch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/linkedList/linkedList.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/linkedList/linkedList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/randomNumbers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/randomNumbers/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/returnIntMinMax.go/returnIntMinMax.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/returnIntMinMax.go/returnIntMinMax.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/Fibonacci/fib.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/Fibonacci/fib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/basicHelloWorld/basicHelloWorld.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/basicHelloWorld/basicHelloWorld.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/cSelect/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/insertWithErrchan/insertWithErrChan.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/insertWithErrchan/insertWithErrChan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/moreWorkers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/moreWorkers/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/mutexBasicsStartStopService/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/mutexBasicsStartStopService/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/ping/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/ping/ping.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/tennis/tennis.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/tennis/tennis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/urlChecker/urlCheckResponseCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/urlChecker/urlCheckResponseCode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wgArrayIteration/wgArrayIteration.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wgArrayIteration/wgArrayIteration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wgPartialSum/wgPartialSumBasic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wgPartialSum/wgPartialSumBasic/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wgPartialSum/withParallelism/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wgPartialSum/withParallelism/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration3(generator)/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration3(generator)/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration4(select)/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/wordHistogram/iteration4(select)/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/workPattern/workerPattern.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/workPattern/workerPattern.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/fake-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/fake-data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/search_api.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/utl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/bookmark_store.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/bookmark_store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/mongo/mgoSimpleConnect/mgoSimpleConnect.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/mongo/mgoSimpleConnect/mgoSimpleConnect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/mysqlSimpleCRUD/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/mysqlSimpleCRUD/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/redis/redisBasic/albums.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/redis/redisBasic/albums.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/redis/redisBasic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/redis/redisBasic/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/redis/redisBasic/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/redis/redisBasic/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/dockerSimpleApi/api/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/dockerSimpleApi/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/dockerSimpleApi/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcBasicExProto/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcBasicExProto/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcBasicExProto/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcBasicExProto/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/helloworld.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/helloworld.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/helloworld.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/helloworld.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/helloworld/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/grpcGoogleExample/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/protobufExample/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/protobufExample/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/protobufExample/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/protobufExample/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/protobufExample/transport/clientStructure.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/protobufExample/transport/clientStructure.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../grpc/protobufExample/transport/clientStructure.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../grpc/protobufExample/transport/clientStructure.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../embeddingStructs/embeddingstructs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../embeddingStructs/embeddingstructs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reflection/reflection.go" beforeDir="false" afterPath="$PROJECT_DIR$/../reflection/reflection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../typeAssertion/assert.go" beforeDir="false" afterPath="$PROJECT_DIR$/../typeAssertion/assert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/append.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/append.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/controlStatments/switchSimpleEx/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/controlStatments/switchSimpleEx/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/bufferReadSeeker/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/bufferReuse/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/bufferReuse/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/book_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/book_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytestrings.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytestrings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/claArguments/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/claArguments/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/posts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/posts.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter2/read_csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter2/read_csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter2/write_csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter2/write_csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/fileBufferedInputToStdout/goodbye.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/fileBufferedInputToStdout/goodbye.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/fileBufferedInputToStdout/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/fileBufferedInputToStdout/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/filedirs/bytes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/filedirs/bytes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/filedirs/dirs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/filedirs/dirs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioutilFileWriting/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioutilFileWriting/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioutilFileWriting/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioutilFileWriting/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testfile1" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testfile1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testfile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testfile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testsubdirectory/testfile3" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/pathWalking/testsubdirectory/testfile3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/readerSeekerWithBuffers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/readerSeekerWithBuffers/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/readingUserInput/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/readingUserInput/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/scanLinesFromTxt/ex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/scanLinesFromTxt/ex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/scanLinesFromTxt/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/scanLinesFromTxt/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleCopy/file.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleCopy/file.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleCopy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleCopy/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/data1" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/data1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/data2" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/data2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/simple_write.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/simple_write.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simplePipe/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simplePipe/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simplePipe/pipedFile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simplePipe/pipedFile.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleWriteString/file.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleWriteString/file.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleWriteString/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleWriteString/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/stringField/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/stringField/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/pointers/basicPointerAddition/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/pointers/basicPointerAddition/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/regExp/patternMatchSimple/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/regExp/patternMatchSimple/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/rec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/send.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Transport/message.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Transport/message.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Transport/message.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Transport/message.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/task.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/task.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/task.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/task.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/transport.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/transport.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/transport.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/Transport/transport.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/master/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/master/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/restapi/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsMasterWorker/restapi/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Time/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Time/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/Time.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/Time.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/Time.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/Time.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/User.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/User.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/Transport/User.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/User/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/User/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsTwoService/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/pb/pb.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/pb/pb.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/pb/pb.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/pb/pb.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/request/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/request/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/response/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/response/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/subscriber/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/Introducing_NATS/subscriber/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/time/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/time/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/transport/time.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/transport/time.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/transport/users.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/transport/users.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/users/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/StartingNats/users/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/json/jsonAndGoZooTutorial/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/json/jsonAndGoZooTutorial/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/json/jsonAndGoZooTutorial/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/json/jsonAndGoZooTutorial/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/netCore/echoServer/echo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/netCore/echoServer/echo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/netCore/tcpipClientServer/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/netCore/tcpipClientServer/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/socketio/socketioExample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/socketio/socketioExample/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../patterns/dependencyInjection/napkinSimpkleDI/napkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../patterns/dependencyInjection/napkinSimpkleDI/napkin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/api" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/readme.Md" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/readme.Md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Edit.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Edit.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Footer.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Footer.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Header.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Header.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Index.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Index.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Menu.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Menu.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/New.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/New.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Show.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/form/Show.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../scratchpad/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/templateStdOut/templateStdOut.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/templateStdOutExtended/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../templates/templateStdOutExtended/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1hBkrv7r5jGqMdwjDMVjYzr935M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/williamnoble/Projects/interfaces/helloer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="helloer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/helloer.go" />
+      <package value="github.com/williamnoble/Projects/interfaces/helloer" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/interfaces/helloer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599492776451">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="736" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599492776451" />
+    <state x="1817" y="308" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599496635869">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1817" y="308" key="#com.intellij.ide.macro.MacrosDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599496635869" />
+    <state x="1109" y="416" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1599493448613">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1109" y="416" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599493448613" />
+    <state x="1307" y="410" key="#com.intellij.tools.ToolEditorDialog" timestamp="1599496696599">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1307" y="410" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599496696599" />
+    <state x="1061" y="442" key="FileChooserDialogImpl" timestamp="1599583512410">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1061" y="442" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599583512410" />
+    <state width="1258" height="400" key="GridCell.Tab.0.bottom" timestamp="1599496764206">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599496764206" />
+    <state width="1258" height="400" key="GridCell.Tab.0.center" timestamp="1599496764206">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599496764206" />
+    <state width="1258" height="400" key="GridCell.Tab.0.left" timestamp="1599496764205">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599496764205" />
+    <state width="1258" height="400" key="GridCell.Tab.0.right" timestamp="1599496764206">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599496764206" />
+    <state x="782" y="346" key="SettingsEditor" timestamp="1599496749854">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599496749854" />
+  </component>
+</project>

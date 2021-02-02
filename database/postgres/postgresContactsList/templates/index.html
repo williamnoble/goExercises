@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row center-align">
+        <h1>Contacts</h1></div>
+
+    {{range .Contacts}}
+    <div class="row">
+        <div class="col l4"></div>
+    </div>
+    <div class="row">
+        <div class="col l4 center-align">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">{{.Name}}</span>
+                    <p>{{.Phone }}</p>
+                    <p>{{.Address}}</p>
+                    <p>Favorite colors:{{StringsJoin .Favorites.Colors ", "}}
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="coll4"></div>
+        <div>
+        </div>
+
+
+        {{end}}
+    </div>
+</div>
+</body>
+</html>

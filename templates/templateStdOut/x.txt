@@ -1,0 +1,17 @@
+package main
+
+import "html/template"
+
+type Person struct {
+	Name string
+}
+
+func main() {
+	t := template.New("Example Template")
+	t, _ = t.Parse("{{ .Name}}")
+	p := Person{Name: "William"}
+	err := t.Execute(os.Stdout, p)
+	if err != nil {
+		panic(err)
+	}
+}

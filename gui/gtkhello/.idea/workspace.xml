@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e700d1a-121c-4d73-a667-c88cba2f7e49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearchWill.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/duplicateLines/dup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/echoStringsJoin/echo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetch/urlFetch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetchConcurrent/urlFetchConcurrent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServer/serverOne.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServerWithCounter/webServerWithCounter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch2/echo4/echo4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/AEsql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dictionaries/will.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/.idea/fyne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/basics/basics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/canvas/canvas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/kd/kd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/layout/layout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fyne/widget/widget.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interfaces/helloer/helloer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/directories/directories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/fileCreate/fileCreate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/templateStdOut/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/cSelect/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/bookmark_store.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/bookmark_store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/bufferReadSeeker/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/rec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/send.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/templateStdOut/templateStdOut.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bXfqHkG4zJ4ECF0yv5uitIjG2O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../fyne/basics" />
+      <recent name="$PROJECT_DIR$/../fyne/hello" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build github.com/williamnoble/Projects/gui/fyne/basics">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="github.com/williamnoble/Projects/gui/gtkhello" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/williamnoble/Projects/gui/fyne/basics" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../fyne/basics/basics.go" />
+      <package value="github.com/williamnoble/Projects/gui/fyne/basics" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/williamnoble/Projects/gui/fyne/canvas" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../fyne/canvas/canvas.go" />
+      <package value="github.com/williamnoble/Projects/gui/fyne/canvas" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/williamnoble/Projects/gui/fyne/kd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../fyne/kd/kd.go" />
+      <package value="github.com/williamnoble/Projects/gui/fyne/kd" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/williamnoble/Projects/gui/fyne/layout" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../fyne/layout/layout.go" />
+      <package value="github.com/williamnoble/Projects/gui/fyne/layout" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/williamnoble/Projects/gui/fyne/widget" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/../fyne/widget/widget.go" />
+      <package value="github.com/williamnoble/Projects/gui/fyne/widget" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="fyne" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/williamnoble/Projects/gui/gtkhello" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/gui/fyne/basics" />
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/gui/fyne/canvas" />
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/gui/fyne/layout" />
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/gui/fyne/kd" />
+        <item itemvalue="Go Build.go build github.com/williamnoble/Projects/gui/fyne/widget" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1126" y="173" key="#go_build_github.com/williamnoble/Projects/gui/fyne" timestamp="1588784303479">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state x="1126" y="173" key="#go_build_github.com/williamnoble/Projects/gui/fyne/0.23.1920.1008@0.23.1920.1008" timestamp="1588784303479" />
+    <state x="1017" y="101" key="CommitChangelistDialog2" timestamp="1588784232895">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state x="1017" y="101" key="CommitChangelistDialog2/0.23.1920.1008@0.23.1920.1008" timestamp="1588784232895" />
+    <state width="1289" height="338" key="GridCell.Tab.0.bottom" timestamp="1588786409494">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.0.bottom/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409494" />
+    <state width="1289" height="338" key="GridCell.Tab.0.center" timestamp="1588786409493">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.0.center/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409493" />
+    <state width="1289" height="338" key="GridCell.Tab.0.left" timestamp="1588786409493">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.0.left/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409493" />
+    <state width="1289" height="338" key="GridCell.Tab.0.right" timestamp="1588786409493">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.0.right/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409493" />
+    <state width="1289" height="338" key="GridCell.Tab.1.bottom" timestamp="1588786409494">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.1.bottom/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409494" />
+    <state width="1289" height="338" key="GridCell.Tab.1.center" timestamp="1588786409494">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.1.center/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409494" />
+    <state width="1289" height="338" key="GridCell.Tab.1.left" timestamp="1588786409494">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.1.left/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409494" />
+    <state width="1289" height="338" key="GridCell.Tab.1.right" timestamp="1588786409494">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state width="1289" height="338" key="GridCell.Tab.1.right/0.23.1920.1008@0.23.1920.1008" timestamp="1588786409494" />
+    <state x="919" y="177" width="670" height="676" key="search.everywhere.popup" timestamp="1588784888516">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state x="919" y="177" width="670" height="676" key="search.everywhere.popup/0.23.1920.1008@0.23.1920.1008" timestamp="1588784888516" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/basics/basics.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/canvas/canvas.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/layout/layout.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/widget/widget.go</url>
+          <line>7</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/kd/kd.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../fyne/basics/basics.go</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

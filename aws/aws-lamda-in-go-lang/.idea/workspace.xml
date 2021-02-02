@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ec44267-c450-4f34-ade3-ac1151d2e650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/Projects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/dictionaries/will.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/go.imports.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearchWill.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/handlers/api_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/handlers/handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/user/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/duplicateLines/dup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/echoStringsJoin/echo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetch/urlFetch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/urlFetchConcurrent/urlFetchConcurrent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServer/serverOne.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch1/webServerWithCounter/webServerWithCounter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../books/TheGoProgrammingLanguage/ch2/echo4/echo4.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../concurrency/chanSelect3/chanSelect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../concurrency/chanTimeout/chanTimeout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dataFile1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/.idea/database.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/mongo/mgoBookmarkStore/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/AEsql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/dictionaries/will.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withDepInj/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/client.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/AEsql/withoutDepInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../database/postgres/RestApi_Gorm_JWT_PG/.idea/RestApi_Gorm_JWT_PG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/fyne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/basics/basics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/canvas/canvas.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/kd/kd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/layout/layout.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gui/fyne/widget/widget.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interfaces/.idea/interfaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interfaces/helloer/helloer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/CreateEmptyFile/createEmptyFile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/data/testFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/directories/directories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../languageBasics/io/dd/basicOperations/fileCreate/fileCreate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/.idea/templates.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/goLandEx/.idea/goLandEx.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/templateStdOut/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../templates/writingWebApplications/goWikiWithHttp/.idea/goWikiWithHttp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../testFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessDependencyInj/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/models/books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbAccessGlobalVars/models/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbPersistence/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/dbPersistenceWithServer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/iFaceEx/interfaceExtended.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xTuts/AlexEdwards/iface/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../algos/binarySearch/binarySearch.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/cSelect/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../concurrency/ping/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../concurrency/ping/ping.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/search_api.docker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/elastic/ElasticSearchWithGo/search-api/utl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../database/postgres/postgresContactsList/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/dockerSimpleApi/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/dockerSimpleApi/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/arrAndSlices/arraySetAndIterate/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/bufferReadSeeker/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/buffertoText/compose.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/byteString/bytes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/csvWriter/writescv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/inMemoryDatabase/inMemoryDatabase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioReaderAlphaReader/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/ioWriterStream/iteration1/file.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/simple_write.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../languageBasics/io/simpleFileWriting/simple_write.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Receive/rec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../messagebrokers/nats/GoNatsEventsPattern/Send/send.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../net/netCore/tcpipClientServer/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../net/netCore/tcpipClientServer/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../patterns/dependencyInjection/napkinSimpkleDI/napkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../patterns/dependencyInjection/napkinSimpkleDI/napkin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/api" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/SqlGormRestfulApi/api/app/handler/employees.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/sqlRestfulFromScratch/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../scratchpad/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../templates/templateStdOut/templateStdOut.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1gB5sVdEt2BX0SUoTsn1I7L79Ry" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

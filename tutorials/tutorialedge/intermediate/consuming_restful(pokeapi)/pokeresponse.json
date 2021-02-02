@@ -1,0 +1,19 @@
+{
+  "name":"kanto",
+  "region": {
+    "url":"http:\/\/pokeapi.co\/api\/v2\/region\/1\/",
+    "name":"kanto"
+  },
+  "version_groups":[],
+  "is_main_series":true,
+  "descriptions":[],
+  "pokemon_entries":[
+    {
+      "entry_number": 1,
+      "pokemon_species": {
+        "url":"http:\/\/pokeapi.co\/api\/v2\/pokemon-species\/1\/",
+        "name":"bulbasaur"
+      }
+    }
+  ]
+}

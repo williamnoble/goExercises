@@ -1,0 +1,4 @@
+GET http://localhost:8080
+Accept: application/json
+
+### 1.16 Hello Earthling
