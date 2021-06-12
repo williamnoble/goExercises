@@ -21,7 +21,11 @@ func main() {
 		return
 	}
 
-	defer f.Close()
+	defer func() {
+		if err = f.Close(); err != nil {
+			fmt.Printf("error: %v", err)
+		}
+	}()
 
 	var b = make([]byte, 16)
 

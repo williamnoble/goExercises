@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 	// declare empty array
+
+
 	var x [3]int
 	x[0] = 0
 	x[1] = 10
