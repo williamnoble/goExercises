@@ -22,7 +22,7 @@ type UserPage struct {
 }
 
 func main() {
-	message, err := ioutil.ReadFile("tpl.gohtml")
+	message, err := ioutil.ReadFile("tpl.tmpl")
 	if err != nil {
 		panic(err)
 	}
@@ -35,7 +35,7 @@ func main() {
 	p := UserPage{
 		Title: "A Working Example of Templates",
 		Users: []User{
-			{
+			{§
 				Username: "William",
 				Locations: map[string]Location{
 					"Home": {

@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/williamnoble/Projects/xTuts/AlexEdwards/dbAccessDependencyInj/models"
+	"github.com/williamnoble/goExercises/tutorials/AlexEdwards/dbAccessDependencyInj/models"
 )
 
 type Env struct {
@@ -14,18 +14,21 @@ type Env struct {
 }
 
 func main() {
-	db, err := models.NewDB("postgres://postgres:@DatabaseUser246@localhost/bookstore?sslmode=disable")
+	db, err := models.NewDB("postgres://admin:admin@206.189.126.165/bookstore?sslmode=disable")
 	if err != nil {
-		log.Panic(err)
+		log.Panic("panic!", err)
 	}
 	env := &Env{db: db}
 
 	http.HandleFunc("/books", env.booksIndex)
-	_ = http.ListenAndServe(":3000", nil)
+	err = http.ListenAndServe("localhost:3000", nil)
+	if err != nil {
+		fmt.Println("Fatal Err :(")
+	}
 }
 
 func (env *Env) booksIndex(w http.ResponseWriter, r *http.Request) {
-
+	fmt.Println("Connected..")
 	if r.Method != "GET" {
 		http.Error(w, http.StatusText(405), 405)
 		return

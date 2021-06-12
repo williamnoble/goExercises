@@ -21,6 +21,7 @@ func dbConn() (db *sql.DB) {
 	dbPass := "root"
 	//	dbPort := 3006
 	dbName := "goblog"
+	dbDriver := "mysql"
 	dbURI := fmt.Sprintf("%s%s:%s@/%s", dbDriver, dbUser, dbPass, dbName)
 	// db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
 	db, err := sql.Open("mysql", dbURI)

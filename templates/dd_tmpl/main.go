@@ -24,26 +24,21 @@ func main() {
 
 }
 
-var persons []Person
-
 func serveTemplate(w http.ResponseWriter, r *http.Request) {
-	_, _ = w.Write([]byte("Welcome to my server"))
-	p := Person{
-		Name: "william",
-		Age:  33,
-	}
-	persons = append(persons, p)
+	var persons []Person
+	w.Header().Set("Content-Type", "text/html")
 
-	p = Person{
-		Name: "JONATHAN",
-		Age:  31,
-	}
-	persons = append(persons, p)
+	will := Person{"William", 33}
+	jon := Person{"Jonathan", 31}
+	persons = append(persons, will, jon)
 
-	t, err := template.ParseFiles("two/p.tmpl")
+	t, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+	// fmt.Println(t.Name())
+	w.Header().Set("Content-Type", "text/html")
+	// t.Execure passes the io.Writer and data interface{}: persons
 	if err := t.Execute(w, persons); err != nil {
 		fmt.Println(err.Error())
 	}

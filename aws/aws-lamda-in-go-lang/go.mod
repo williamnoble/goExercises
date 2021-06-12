@@ -1,4 +1,4 @@
-module github.com/williamnoble/Projects/aws/aws-lamda-in-go-lang
+module github.com/williamnoble/goExercises/aws/aws-lamda-in-go-lang
 
 go 1.13
 

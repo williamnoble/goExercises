@@ -13,8 +13,8 @@ func execute() {
 		fmt.Printf("%s", err)
 	}
 	fmt.Println("Command Successfully Executed")
-	output := string(out[:])
-	//	output := string(out)
+	// output := string(out[:])
+	output := string(out)
 	fmt.Println(output)
 }
 

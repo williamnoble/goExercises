@@ -1,21 +1,37 @@
 package main
 
+// edited version.
+
 import "fmt"
 
 type User struct {
-	name  string
+	name string
 	email string
 }
 
 func (u *User) notify() {
-	fmt.Printf("Sending email to: %s<%s>\n", u.email, u.name,
-	)
-
+	fmt.Printf("Sending an email " +
+		"to: %s<%s>  ", u.name, u.email)
 }
+
 func main() {
-	bill := User{"Bill", "Bill@email.com"}
-	tom := User{"Tom", "Tom@email.com"}
+	bill := User{
+		name:  "Bill",
+		email: "User@mail.com",
+	}
+
+	tom := User{
+		name:  "Timothy",
+		email: "Timbothegreat@mail.com",
+	}
 
 	bill.notify()
 	tom.notify()
+
+	users := []User{bill, tom}
+	fmt.Println(users)
+
+	for _,v := range users {
+		fmt.Printf("%s - %s", v.email, v.name)
+	}
 }

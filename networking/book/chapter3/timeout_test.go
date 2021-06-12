@@ -9,10 +9,10 @@ import (
 
 func DialTimeout(network, address string, timeout time.Duration) (net.Conn, error) {
 	d := net.Dialer{
-		Control: func(network, address string, c syscall.RawConn) error {
+		Control: func(_, addr string, _ syscall.RawConn) error {
 			return &net.DNSError{
 				Err:         "connection timed out",
-				Name:        address,
+				Name:        addr,
 				Server:      "127.0.0.1",
 				IsTimeout:   true,
 				IsTemporary: true,
@@ -24,8 +24,8 @@ func DialTimeout(network, address string, timeout time.Duration) (net.Conn, erro
 }
 
 func TestDialTimeout(t *testing.T) {
-	c, err := DialTimeout("tcp", "127.0.0.1", 5 * time.Second)
-	if err != nil {
+	c, err := DialTimeout("tcp", "10.0.0.1:http", 5 * time.Second)
+	if err == nil {
 		c.Close()
 		t.Fatal("Connection did not time out")
 	}
@@ -37,4 +37,5 @@ func TestDialTimeout(t *testing.T) {
 	if !nErr.Timeout() {
 		t.Fatal("error is not a timeout")
 	}
+	t.Log("Got to the end")
 }

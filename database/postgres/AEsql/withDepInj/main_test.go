@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/williamnoble/Projects/database/postgres/AEsql/withDepInj/models"
+	"github.com/williamnoble/goExercises/database/postgres/AEsql/withDepInj/models"
 	"net/http"
 	"net/http/httptest"
 	"testing"

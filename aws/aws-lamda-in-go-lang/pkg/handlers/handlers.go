@@ -6,7 +6,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
-	"github.com/williamnoble/Projects/aws/aws-lamda-in-go-lang/pkg/user"
+	"github.com/williamnoble/goExercises/aws/aws-lamda-in-go-lang/pkg/user"
 )
 
 var ErrorMethodNotAllowed = "Method Not Allowed"

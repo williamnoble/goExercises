@@ -5,7 +5,7 @@ import (
 	fmt "fmt"
 	"net/http"
 
-	"github.com/williamnoble/projects/grpc/protobufExample/transport"
+	"github.com/williamnoble/goExercises/microservices/grpc/protobufExample/transport"
 
 	"github.com/golang/protobuf/proto"
 )

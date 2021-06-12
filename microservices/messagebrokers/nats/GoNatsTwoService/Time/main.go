@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/williamnoble/Projects/messagebrokers/nats/GoNatsTwoService/Transport"
+	"github.com/williamnoble/goExercises/messagebrokers/nats/GoNatsTwoService/Transport"
 )
 
 var nc *nats.Conn

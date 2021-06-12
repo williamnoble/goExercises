@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	_ "github.com/lib/pq"
-	"github.com/williamnoble/Projects/database/postgres/AEsql/withDepInj/models"
+	"github.com/williamnoble/goExercises/database/postgres/AEsql/withDepInj/models"
 )
 
 var db *sql.DB

@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/nats-io/nats.go"
-	"github.com/williamnoble/Projects/messagebrokers/nats/GoNatsTwoService/Transport"
+	"github.com/williamnoble/goExercises/messagebrokers/nats/GoNatsTwoService/Transport"
 	// "github.com/nats-io/go-nats"
 )
 

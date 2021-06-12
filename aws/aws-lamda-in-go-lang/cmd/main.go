@@ -9,7 +9,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
-	"github.com/williamnoble/Projects/aws/aws-lamda-in-go-lang/pkg/handlers"
+	"github.com/williamnoble/goExercises/aws/aws-lamda-in-go-lang/pkg/handlers"
 )
 
 var (

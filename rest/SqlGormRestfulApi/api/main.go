@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/williamnoble/Projects/rest/SqlGormRestfulApi/api/app"
-	"github.com/williamnoble/Projects/rest/SqlGormRestfulApi/api/app/config"
+	"github.com/williamnoble/goExercises/rest/SqlGormRestfulApi/api/app"
+	"github.com/williamnoble/goExercises/rest/SqlGormRestfulApi/api/app/config"
 )
 
 func main() {

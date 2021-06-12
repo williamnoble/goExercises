@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/williamnoble/Projects/xTuts/AlexEdwards/dbAccessGlobalVars/models"
+	"github.com/williamnoble/goExercises/tutorials/AlexEdwards/dbAccessGlobalVars/models"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func booksIndex(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	for _, bk := range bks {
-		fmt.Fprintf(w, "%s, %s, %s, £%.2f\n", bk.Isbn, bk.Title, bk.Author, bk.Price)
+		_, _ = fmt.Fprintf(w, "%s, %s, %s, £%.2f\n", bk.Isbn, bk.Title, bk.Author, bk.Price)
 	}
 
 }

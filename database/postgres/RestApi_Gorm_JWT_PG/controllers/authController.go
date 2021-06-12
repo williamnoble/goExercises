@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/williamnoble/projects/database/postgres/RestApi_Gorm_JWT_PG/models"
+	"github.com/williamnoble/goExercises/database/postgres/RestApi_Gorm_JWT_PG/models"
 
 	u "github.com/williamnoble/RestApi_Gorm_JWT_PG/util"
 )

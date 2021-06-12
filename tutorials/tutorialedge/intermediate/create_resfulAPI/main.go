@@ -10,7 +10,7 @@ import (
 )
 
 type Article struct {
-	// ID   string       `json:"ID"`
+	ID      string `json:"ID"`
 	Title   string `json:"string"`
 	Desc    string `json:"desc"`
 	Content string `json:"content"`

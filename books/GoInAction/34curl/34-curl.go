@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 )
@@ -15,15 +16,18 @@ func init() {
 
 }
 func main() {
+
 	url := os.Args[1]
 	data, err := http.Get(url)
 	if err != nil {
-		fmt.Println(err)
-		return
+		log.Fatal(err)
+	}
 
-		_, _ = io.Copy(os.Stdout, data.Body)
-		if err := data.Body.Close(); err != nil {
-			fmt.Println(err)
+	// copy body of Get req to os.stdout
+	_, err = io.Copy(os.Stdout, data.Body)
+
+	if err = data.Body.Close(); err != nil {
+		fmt.Println(err)
 
 		}
 	}

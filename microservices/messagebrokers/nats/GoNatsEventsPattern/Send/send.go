@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/williamnoble/Projects/messagebrokers/nats/GoNatsEventsPattern/Transport"
+	"github.com/williamnoble/goExercises/messagebrokers/nats/GoNatsEventsPattern/Transport"
 
 	natsProto "github.com/nats-io/nats.go/encoders/protobuf"
 

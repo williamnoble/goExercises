@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/williamnoble/Projects/books/GoInAction/searchPackage/search"
+	"github.com/williamnoble/goExercises/books/GoInAction/searchPackage/search"
 )
 
 func init() {

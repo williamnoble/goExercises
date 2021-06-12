@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/williamnoble/Projects/grpc/exGoogle/helloworld"
+	pb "github.com/williamnoble/goExercises/grpc/exGoogle/helloworld"
 	"google.golang.org/grpc"
 )
 
