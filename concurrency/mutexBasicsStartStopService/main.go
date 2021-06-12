@@ -2,7 +2,7 @@ package main
 
 import (
 	"sync"
-	"time"	x
+	"time"
 )
 
 type Service struct {
@@ -33,6 +33,6 @@ func (s *Service) Stop() {
 func main() {
 	s := &Service{}
 	s.Start()
-	time.Sleep(time.Second)
+	time.Sleep(1 * time.Second)
 	s.Stop()
 }

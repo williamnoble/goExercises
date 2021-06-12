@@ -6,7 +6,8 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/williamnoble/goExercises/grpc/exGoogle/helloworld"
+	"github.com/williamnoble/goExercises/microservices/grpc/google/helloworld"
+
 	"google.golang.org/grpc"
 )
 
@@ -22,7 +23,7 @@ func main() {
 	}
 
 	defer conn.Close()
-	c := pb.NewGreeterClient(conn)
+	c := helloworld.NewGreeterClient(conn)
 
 	name := defaultName
 	if len(os.Args) > 1 {
@@ -31,7 +32,7 @@ func main() {
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
-	r, err := c.SayHello(ctx, &pb.HelloRequest{Name: name})
+	r, err := c.SayHello(ctx, &helloworld.HelloRequest{Name: name})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}

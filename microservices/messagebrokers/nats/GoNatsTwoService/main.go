@@ -7,11 +7,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"
 
 	"github.com/gorilla/mux"
 	"github.com/nats-io/nats.go"
-	"github.com/williamnoble/goExercises/messagebrokers/nats/GoNatsTwoService/Transport"
-	//	"github.com/nats-io/go-nats"
 )
 
 var nc *nats.Conn

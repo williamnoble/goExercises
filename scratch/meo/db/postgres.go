@@ -36,21 +36,21 @@ func (r *PostgresRespository) InsertMeow(ctx context.Context, meow schema.Meow) 
 func (r *PostgresRespository) ListMeows(ctx context.Context, skip uint64, take uint64) ([]schema.Meow, error) {
 	stmt := "SELECT * FROM meows ORDER BY id DESC OFFSET $1 LIMIT $2"
 	rows, err := r.db.Query(stmt, skip, take)
-	if err != nil{
-		return nil, error
+	if err != nil {
+		return nil, err
 	}
 
 	defer rows.Close()
 	meows := []schema.Meow{}
-	for rows.Next {
-	if err = rows.Scan(&meow.ID, &meow.Body, &meow.CreatedAt); err == nil {
-		meows = append(meows, meow)
-	  }
+	for rows.Next() {
+		meow := schema.Meow{}
+		if err = rows.Scan(&meow.ID, &meow.Body, &meow.CreatedAt); err == nil {
+			meows = append(meows, meow)
+		}
 	}
 	if err = rows.Err(); err != nil {
-	  return nil, err
+		return nil, err
 	}
-  
+
 	return meows, nil
-  }
 }

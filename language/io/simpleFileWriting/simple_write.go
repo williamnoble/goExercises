@@ -21,7 +21,7 @@ func main() {
 	fileTwo, _ = os.Open("file2")
 	defer fileTwo.Close()
 	b := bytes.Buffer{}
-	by, _ = fileTwo.Read(b.Bytes())
-	fmt.Printf("Read %d bytes from file \n", by)
-	fmt.Println(string(by))
+	byte, _ := fileTwo.Read(b.Bytes())
+	fmt.Printf("Read %d bytes from file \n", byte)
+	fmt.Println(string(byte))
 }

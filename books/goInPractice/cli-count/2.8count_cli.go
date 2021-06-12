@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"os"
-
 	"gopkg.in/urfave/cli.v1"
+	"os"
 )
 
 func main() {

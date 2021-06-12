@@ -27,7 +27,7 @@ func findAlbum(id string) (*Album, error) {
 	}
 	var album Album
 	err = redis.ScanStruct(values, &album)
-	if err != nil {x
+	if err != nil {
 		return nil, err
 	}
 	return &album, nil

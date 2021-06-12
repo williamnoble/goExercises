@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/williamnoble/goExercises/grpc/exGoogle/helloworld"
+	"github.com/williamnoble/goExercises/microservices/grpc/google/helloworld"
 	"google.golang.org/grpc"
 )
 
@@ -15,9 +15,9 @@ const (
 
 type server struct{}
 
-func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+func (s *server) SayHello(ctx context.Context, in *helloworld.HelloRequest) (*helloworld.HelloReply, error) {
 	log.Printf("Recieved %v", in.Name)
-	return &pb.HelloReply{Message: "Hello" + in.Name}, nil
+	return &helloworld.HelloReply{Message: "Hello" + in.Name}, nil
 }
 
 func main() {
@@ -28,7 +28,8 @@ func main() {
 	}
 
 	s := grpc.NewServer()
-	pb.RegisterGreeterServer(s, &server{})
+
+	helloworld.RegisterGreeterServer(s, &server{})
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("Failed to server: %v", err)
 	}

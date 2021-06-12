@@ -35,7 +35,7 @@ func main() {
 	p := UserPage{
 		Title: "A Working Example of Templates",
 		Users: []User{
-			{§
+			{
 				Username: "William",
 				Locations: map[string]Location{
 					"Home": {

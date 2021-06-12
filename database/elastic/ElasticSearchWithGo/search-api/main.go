@@ -111,7 +111,7 @@ func searchEndpoint(c *gin.Context) {
 	docs := make([]DocumentResponse, 0)
 	for _, hit := range result.Hits.Hits {
 		var doc DocumentResponse
-		if err = json.Unmarshal(hit.Source, &doc); err != nil {
+		if err = json.Unmarshal(*hit.Source, &doc); err != nil {
 			log.Println("failed to unmarshal data")
 		}
 

@@ -4,11 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/williamnoble/goExercises/messagebrokers/nats/GoNatsEventsPattern/Transport"
-
-	natsProto "github.com/nats-io/nats.go/encoders/protobuf"
-
 	"github.com/nats-io/nats.go"
+	natsProto "github.com/nats-io/nats.go/encoders/protobuf"
 )
 
 const (

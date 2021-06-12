@@ -36,7 +36,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	if name == "" {
 		name = "William Noble"
 	}
-	fmt.Fprint
+	w.Write([]byte(name))
 }
 
 func main() {
