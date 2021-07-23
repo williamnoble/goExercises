@@ -1,6 +1,6 @@
 //https://github.com/Bouwdie/localstack-example-go/blob/master/main.go
 //
-// go run main.go --queue "input-queue" --topic-arn "arn:aws:sns:us-east-1:000000000000:result-topic" --bucket "result-bucket"
+// go run adder.go --queue "input-queue" --topic-arn "arn:aws:sns:us-east-1:000000000000:result-topic" --bucket "result-bucket"
 
 package main
 
