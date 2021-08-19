@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "William",
+      "language": "English",
+      "interests": ["programming", "travel"],
+      "characteristics": {
+        "height": "182cm",
+        "EyeColour": "green"
+      }
+    },
+    {
+      "name": "Jonathan",
+      "language": "French",
+      "interests": ["cooking", "walking"]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ func main() {
 	var texts = []string{
 		`As he came into the window`,
 		`It was the sound of a crescendo
-He came into her apartment`,
+		He came into her apartment`,
 		`He left the bloodstains on the carpet`,
 		`She ran underneath the table
 He could see she was unable

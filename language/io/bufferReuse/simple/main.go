@@ -12,7 +12,7 @@ func main() {
 		`bb`,       // 2
 		`ccc`,      // 3
 		`dddd`,     // 4
-		`eeeeFour`, // 8
+		`eeeeeeee`, // 8
 	}
 
 	for i := range entry {

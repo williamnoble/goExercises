@@ -16,7 +16,7 @@ type Customer struct {
 }
 
 // Implement a WriteJSON method that takes an io.Writer as the parameter.
-// It marshals the customer struct to JSON, and if the marshal worked
+// It marshals the customer struct to json, and if the marshal worked
 // successfully, then calls the relevant io.Writer's Write() method.
 func (c *Customer) WriteJSON(w io.Writer) error {
 	js, err := json.Marshal(c)
@@ -45,7 +45,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer f.Close()
+	defer func(f *os.File) {
+		_ = f.Close()
+	}(f)
 
 	err = c.WriteJSON(f)
 	if err != nil {

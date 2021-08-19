@@ -6,28 +6,30 @@ type integer int
 
 func main() {
 	x := 21
-	fmt.Printf("starting x: %d\n", x)
+	fmt.Printf("starting x: %d\n", x) // => x: 21
 
 	addWithoutPointer(x)
-	fmt.Printf("(fn w/o pointer) x: %d\n", x)
+	fmt.Printf("(fn w/o pointer) x: %d\n", x) // => x: 21
 
 	addWithPointer(&x)
-	fmt.Printf("(fn w pointer) x: %d\n", x)
+	fmt.Printf("(fn w pointer) x: %d\n", x) // => x:22
 
 	y := integer(21)
 	y.addWithPointer()
-	fmt.Printf("(value rec) y: %d\n", y)
+	fmt.Printf("(value rec) y: %d\n", y) // => y: 22
 
 	y = integer(21)
 	newValue := int(y.addWithoutPointer())
-	fmt.Printf("(value rec) y: %d - %d\n", y, newValue)
+	fmt.Printf("(value rec) y: %d - %d\n", y, newValue) // => y: 21 - 22
 
 	// copy
 	simpleString := "Hello"
 	pointerTo := &simpleString
+	pointedDeference := *pointerTo
 	pointerDereferenceTo := *&simpleString
 
 	fmt.Printf("basic value of the simple string is: %s\n", simpleString)
+	fmt.Printf("location in memory: %v\n", pointedDeference)
 	fmt.Printf("location in memory: %v\n", pointerTo)
 	fmt.Printf("type of value : %T\n", pointerTo)
 	fmt.Printf("value of dereferenced pointer: %v", pointerDereferenceTo)
@@ -46,10 +48,10 @@ func main() {
 
 	//3
 	var num int
-	fmt.Println(&num)
+	fmt.Println(&num) // => address of num
 	var ptr *int
-	ptr = &num
-	*ptr = 55
+	ptr = &num // ptr points to address of num
+	*ptr = 55  // dereference ptr, value of num = 55
 	fmt.Println(num)
 }
 
@@ -65,6 +67,7 @@ func addWithPointer(i *int) int {
 
 // not signature not required
 func (in *integer) addWithPointer() {
+
 	*in = *in + 1
 }
 

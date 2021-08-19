@@ -63,7 +63,7 @@ func main() {
 	reflectSetValue2(&a)
 	fmt.Println(a)
 
-	fmt.Println("4、TypeOf结构体")
+	fmt.Println("4、TypeOf")
 	per := person{
 		Name: "aaron",
 		Age:  25,

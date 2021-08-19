@@ -9,23 +9,18 @@ type user struct {
 	name string
 }
 
-type userKey int
+type userKey string
 
 func main() {
 	u := user{
 		name: "William",
 	}
 
-	const uk userKey = 0
+	var k userKey
+	ctx := context.WithValue(context.Background(), k, u)
 
-	ctx := context.WithValue(context.Background(), uk, &u)
+	value := ctx.Value(k).(user)
+	fmt.Println(value.name)
 
-	if u, ok := ctx.Value(uk).(*user); ok {
-		fmt.Println("User", u.name)
-		fmt.Println(uk)
-	}
-
-	if _, ok := ctx.Value(0).(*user); !ok {
-		fmt.Println("User not found")
-	}
+	// Or we Pass it a pointer to &u then dereference .(*user)
 }
