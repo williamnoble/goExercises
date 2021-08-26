@@ -6,31 +6,39 @@ import (
 )
 
 type Friend struct {
-	Fname string
+	Name string
 }
 
+var friendOne = Friend{
+	Name: "Melanie",
+}
+var friendTwo = Friend{Name: "Jessica"}
+
 type Person struct {
-	UserName string
+	Username string
 	Emails   []string
 	Friends  []*Friend
 }
 
-func main() {
-	f1 := Friend{Fname: "minux.ma"}
-	f2 := Friend{Fname: "xushiwei"}
-	t := template.New("fieldname example")
-	t, _ = t.Parse(`hello {{.UserName}}!
+var t = template.New("index")
+var tmpl, _ = t.Parse(`hello {{.Username}}!
             {{range .Emails}}
                 an email {{.}}
             {{end}}
             {{with .Friends}}
             {{range .}}
-                my friend name is {{.Fname}}
+                friend: {{.Name}}
             {{end}}
             {{end}}
             `)
-	p := Person{UserName: "Astaxie",
-		Emails:  []string{"astaxie@beego.me", "astaxie@gmail.com"},
-		Friends: []*Friend{&f1, &f2}}
-	_ = t.Execute(os.Stdout, p)
+
+func main() {
+
+	p := Person{
+		Username: "Frank",
+		Emails:   []string{"frank@example.com", "frank2@example.com"},
+		Friends:  []*Friend{&friendOne, &friendTwo},
+	}
+
+	_ = tmpl.Execute(os.Stdout, p)
 }

@@ -24,28 +24,22 @@ var bookList = []book{
 	{Author: grr, Title: "A Dream of Spring"},
 }
 
+//goland:noinspection ALL
 func main() {
-	// 0666 = default file permissions.
-	dst, err := os.OpenFile("./book_list2.txt", os.O_CREATE|os.O_WRONLY, 6066)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-	defer func(dst *os.File) {
-		_ = dst.Close()
-	}(dst)
+	f, _ := os.OpenFile("./books_delete.txt", os.O_CREATE|os.O_WRONLY, 0666)
+	defer f.Close()
 
-	b := bytes.NewBuffer(make([]byte, 0, 16))
+	// bytes.NewBuffer returns a Pointer to a Buffer
+	b := bytes.NewBuffer([]byte{})
 	for _, v := range bookList {
-		// prints a msg formatted with arguments to writer
-		_, _ = fmt.Fprintf(b, "%s - %s", v.Title, v.Author)
-		if v.Year > 0 {
-			_, _ = fmt.Fprintf(b, " (%d)", v.Year)
-		}
+		fmt.Fprintf(b, "%s %s", v.Author, v.Title)
+		// Write a new line to the buffer
 		b.WriteRune('\n')
-		if _, err := b.WriteTo(dst); false { // copies bytes, drains buffer
-			fmt.Println("Error:", err)
+		// Write the Buffer (b Buffer) WriteTo to an io.Reader (f) from os.OpenFile. Note pointer receiver
+		if _, err := b.WriteTo(f); err != nil {
+			fmt.Println("error")
 			return
 		}
 	}
+
 }

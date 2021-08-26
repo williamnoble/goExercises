@@ -5,15 +5,18 @@ import (
 	"time"
 )
 
+// Important. I forget where I read this example. It's crap.
+
 type Service struct {
-	started bool
-	stpCh   chan struct{}
-	mutex   sync.Mutex
-	cache   map[int]string
+	started  bool
+	stopChan chan struct{}
+	mutex    sync.Mutex
+	cache    map[int]string
 }
 
 func (s *Service) Start() {
-	s.stpCh = make(chan struct{})
+	s.cache = make(map[int]string)
+	s.stopChan = make(chan struct{})
 	go func() {
 		s.mutex.Lock()
 		s.started = true
@@ -27,7 +30,7 @@ func (s *Service) Stop() {
 	defer s.mutex.Unlock()
 	if s.started {
 		s.started = false
-		close(s.stpCh)
+		close(s.stopChan)
 	}
 }
 func main() {

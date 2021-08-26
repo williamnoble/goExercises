@@ -32,7 +32,7 @@ func main() {
 func words(stopCh chan struct{}, data []string) <-chan string {
 	out := make(chan string)
 	go func() {
-		defer close(out)
+		defer close(out) // arguably the most important line
 		for _, line := range data {
 			words := strings.Split(line, " ")
 			for _, word := range words {

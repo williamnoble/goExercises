@@ -29,6 +29,8 @@ func (c *Cabinet) Get(retref interface{}) {
 func main() {
 	f := 3.14152 //pi
 	g := 0.1
+	fmt.Println(reflect.TypeOf(f))
+	fmt.Println(reflect.ValueOf(f))
 	c := NewCabinet(reflect.TypeOf(f))
 	c.Put(f)
 	fmt.Println(c.s.Index(0))

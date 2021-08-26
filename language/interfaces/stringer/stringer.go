@@ -16,11 +16,14 @@ func (b Book) String() string {
 
 func WriteToTerminal(x fmt.Stringer) {
 	fmt.Println(x.String())
+	fmt.Println(x)
+	// You can either explictely call x.String() or use x as it satisfies stringer interface already
 }
 
 type Count int
 
 func (c Count) String() string {
+	// Convert an INT to a STRING (Itoa) however we use int(c) as using custom type.
 	return strconv.Itoa(int(c))
 }
 

@@ -13,7 +13,6 @@ func main() {
 		fmt.Println("1: No Message Recieved")
 	}
 
-	// Block til default then resume main go routine
 	msg := "hi"
 	select {
 	case messages <- msg:

@@ -12,16 +12,9 @@ import (
 )
 
 const (
-	connURI      = "localhost:32768"
+	connURI      = "localhost:6379"
 	connProtocol = "tcp"
 )
-
-// type Album struct {
-// 	Title  string  `redis:"title"`
-// 	Artist string  `redis:"artist"`
-// 	Price  float64 `redis:"price"`
-// 	Likes  int     `redis:"likes"`
-// }
 
 func main() {
 	pool = &redis.Pool{
@@ -107,77 +100,3 @@ func addLike(w http.ResponseWriter, r *http.Request) {
 
 	http.Redirect(w, r, "/album?id="+id, 303)
 }
-
-// _, err = conn.Do("HMSET", "album:1", "title", "Electric Ladyland", "artist", "Jimi Hendrix", "price", 4.95, "likes", 8)
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// fmt.Println("Eletric Ladyland added successfully!!")
-
-// title, err := redis.String(conn.Do("HGET", "album:1", "title"))
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// artist, err := redis.String(conn.Do("HGET", "album:1", "artist"))
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// price, err := redis.Float64(conn.Do("HGET", "album:1", "price"))
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// likes, err := redis.Int(conn.Do("HGET", "album:1", "likes"))
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// fmt.Printf("%s by %s: £%.2f [%d likes]\n", title, artist, price, likes)
-
-// // reply, err := redis.StringMap(conn.Do("HGETALL", "album:1"))
-// // Fetch all album fields with the HGETALL command. Wrapping this
-// // in the redis.Values() function transforms the response into type
-// // []interface{}, which is the format we need to pass to
-// // redis.ScanStruct() in the next step.
-// values, err := redis.Values(conn.Do("HGETALL", "album:1"))
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// // Create an instance of an Album struct and use redis.ScanStruct()
-// // to automatically unpack the data to the struct fields. This uses
-// // the struct tags to determine which data is mapped to which
-// // struct fields.
-// var album Album
-// err = redis.ScanStruct(values, &album)
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// fmt.Printf("%+v", album)
-
-// // album, err := populateAlbum(reply)
-// if err != nil {
-// 	log.Fatal(err)
-// }
-
-// func populateAlbum(reply map[string]string) (*Album, error) {
-// 	var err error
-// 	album := new(Album)
-// 	album.Title = reply["title"]
-// 	album.Artist = reply["artist"]
-// 	album.Price, err = strconv.ParseFloat(reply["price"], 64)
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	// Similarly, we need to convert the 'likes' value from a string to
-// 	// an integer.
-// 	album.Likes, err = strconv.Atoi(reply["likes"])
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	return album, nil
-// }

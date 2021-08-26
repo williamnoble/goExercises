@@ -3,30 +3,32 @@ package main
 import "fmt"
 
 func main() {
-	jobs := make(chan int, 5)
-	done := make(chan bool)
+	jobs := make(chan string, 5) // buffer of 5 jobs, to which we send 15 jobs!
+	done := make(chan bool)      // signal
 
 	go func() {
 		for {
-			j, ok := <-jobs // value, open?
-			if ok {
-				fmt.Println("Received Job", j)
-
-			} else { // Block til Close(Jobs)
-				fmt.Println("Received All Jobs")
-				done <- true
+			job, open := <-jobs
+			if open {
+				fmt.Println("Job Received okay!, JOB: ", job)
+			} else {
+				fmt.Println("All Jobs Received")
+				done <- true // event signal
 				return
 			}
 		}
 	}()
 
-	for j := 1; j <= 3; j++ {
-		jobs <- j
-		fmt.Println("Send Job", j)
+	for x := 1; x <= 15; x++ {
+		job := fmt.Sprintf("Job ID #%d", x)
+		jobs <- job
 	}
 
 	close(jobs)
-	fmt.Println("Sent all Jobs")
+	// Note, this line will _probably_ print before all jobs have printed to stdout.
+	// The goroutine will not panic as we have a go routine which checks job, open -> we need a wg!
+	fmt.Println("All jobs have been sent, now we block on \"done\" channel")
 
 	<-done
+	fmt.Println("Done blocked as it was meant to and now main finishes")
 }

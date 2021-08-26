@@ -20,13 +20,13 @@ func init() {
 }
 
 func main() {
-	log.Println("Inserts Started")
+	log.Println("main begin: Inserts Started")
 	// Buffered channel to receive information about any possible insert.
-	ch := make(chan error, numInserts)
+	ch := make(chan error, numInserts) // 10
 	// Number of responses we need to handle.
 	var waitResponses int
 	for i := 0; i < numInserts; i++ {
-		if isNecessary() {
+		if isNecessary() { // random: Int(0,2) -> true or false?
 			waitResponses++
 			go func(id int) {
 				ch <- insertDoc(id)

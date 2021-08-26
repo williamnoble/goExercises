@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/csv"
 	"fmt"
+	"log"
 	"os"
 	"strconv"
 )
@@ -13,60 +14,52 @@ type Post struct {
 	Author  string
 }
 
+var Posts = []Post{
+	Post{Id: 1, Content: "Hello World", Author: "William"},
+	Post{Id: 2, Content: "Goodbye Cruel World", Author: "Gabriel"},
+	Post{Id: 3, Content: "Hey there Delila", Author: "Old Tom"},
+	Post{Id: 4, Content: "Luke, I am your father", Author: "William"},
+}
+
 func main() {
-	/*
-		WRITING TO OUR CSV FILE
-	*/
 
-	csvFile, err := os.Create("posts.csv")
-	if err != nil {
-		panic(err)
-	}
-	defer csvFile.Close()
+	// csv writer
 
-	allPosts := []Post{
-		Post{Id: 1, Content: "Hello World", Author: "William"},
-		Post{Id: 2, Content: "Goodbye Cruel World", Author: "Gabriel"},
-		Post{Id: 3, Content: "Hey there Delila", Author: "Old Tom"},
-		Post{Id: 4, Content: "Luke, I am your father!!!", Author: "William"},
-	}
+	f, _ := os.Create("f.csv")
+	defer f.Close()
 
-	writer := csv.NewWriter(csvFile)
+	writer := csv.NewWriter(f)
 
-	for _, post := range allPosts {
+	for _, post := range Posts {
 		line := []string{strconv.Itoa(post.Id), post.Content, post.Author}
 		err := writer.Write(line)
 		if err != nil {
-			panic(err)
+			log.Fatal("encountered an error when trying to write to csv")
 		}
 	}
 
+	// Write buffered data to the underlying writer
 	writer.Flush()
 
-	/*
-		READING FROM OUR CSV FILE
-	*/
-	file, err := os.Open("posts.csv")
-	if err != nil {
-		panic(err)
-	}
-	defer file.Close()
+	f, _ = os.Open("f.csv")
+	defer f.Close()
 
-	reader := csv.NewReader(file)
+	reader := csv.NewReader(f)
 	reader.FieldsPerRecord = -1
-	record, err := reader.ReadAll()
-	if err != nil {
-		panic(err)
-	}
+	records, _ := reader.ReadAll()
 
 	var posts []Post
-	fmt.Println(record)
-	for _, item := range record {
-		id, _ := strconv.ParseInt(item[0], 0, 0)
-		post := Post{Id: int(id), Content: item[1], Author: item[2]}
+
+	for _, record := range records {
+		id, _ := strconv.Atoi(record[0])
+		post := Post{
+			Id:      int(id),
+			Content: record[1],
+			Author:  record[2],
+		}
 		posts = append(posts, post)
 	}
-	fmt.Println(posts[0].Id)
-	fmt.Println(posts[0].Content)
-	fmt.Println(posts[0].Author)
+
+	fmt.Println(posts)
+
 }

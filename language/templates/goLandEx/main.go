@@ -27,6 +27,7 @@ func main() {
 		panic(err)
 	}
 
+	// Create a template, allocate the Template.text
 	t, err := template.New("UsersPage").Parse(string(message))
 	if err != nil {
 		panic(err)

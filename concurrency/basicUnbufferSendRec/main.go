@@ -5,7 +5,7 @@ import "fmt"
 import "time"
 
 func main() {
-	fmt.Printf("\n=> Basics of send and receive")
+	fmt.Printf("\n=> Basics send")
 	basicSendRecv()
 
 	fmt.Printf("\n=> Close a channel to signal an event\n")
@@ -28,7 +28,12 @@ func signalClose() {
 		fmt.Println("signal event")
 		close(ch)
 	}()
-	<-ch
-	fmt.Println("event recieved")
+
+	// docs: After the last value has been received from a closed channel c,
+	// any receive from c will succeed without blocking,
+	// returning the zero value for the channel element
+	x := <-ch
+	fmt.Println(x)
+	fmt.Println("event received")
 
 }

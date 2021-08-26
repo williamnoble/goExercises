@@ -15,7 +15,6 @@ type Person struct {
 }
 
 func main() {
-
 	r := mux.NewRouter()
 	r.HandleFunc("/", serveTemplate)
 	if err := http.ListenAndServe(":8080", r); err != nil {
@@ -26,12 +25,12 @@ func main() {
 
 func serveTemplate(w http.ResponseWriter, _ *http.Request) {
 	var persons []Person
+
+	alice := Person{"Alice", 21}
+	bob := Person{"Bob", 67}
+	persons = append(persons, alice, bob)
+
 	w.Header().Set("Content-Type", "text/html")
-
-	will := Person{"William", 33}
-	jon := Person{"Jonathan", 31}
-	persons = append(persons, will, jon)
-
 	t, err := template.ParseFiles("templates/index.html")
 	if err != nil {
 		fmt.Println(err.Error())

@@ -2,19 +2,22 @@ package main
 
 import (
 	"html/template"
+	"log"
 	"os"
 )
 
-type Person struct {
-	Name string
-}
-
 func main() {
-	t := template.New("test")
-	t, err := t.Parse("{{.Name}}")
-	p := Person{Name: "William"}
-	out := t.Execute(os.Stdout, p)
-	if out != nil {
-		panic(err)
+	tmpl := template.New("index")
+	tmpl, _ = tmpl.Parse("{{.Name}}")
+
+	p := struct {
+		Name string
+	}{
+		Name: "William",
+	}
+
+	err := tmpl.Execute(os.Stdout, p)
+	if err != nil {
+		log.Fatal(err)
 	}
 }

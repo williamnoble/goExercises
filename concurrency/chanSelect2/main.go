@@ -7,10 +7,15 @@ import "time"
 import "math/rand"
 
 func main() {
+	fmt.Println("*** Unbuffered double signal ***")
 	signalAck()
+	fmt.Println("*** Buffered: Close and range **")
 	closeRange()
+	fmt.Println("*** Unbuffered select w/ RECEIVE ***")
 	selectRecv()
+	fmt.Println(" *** Unbuffered select w/ SEND ***")
 	selectSend()
+	fmt.Println(" *** select drop***")
 	selectDrop()
 }
 
@@ -35,15 +40,16 @@ func closeRange() {
 	for i := 0; i < 5; i++ {
 		ch <- i
 	}
-
+	// we need to close the channel or we panic as all goroutines are asleep
 	close(ch)
 
 	for v := range ch {
 		fmt.Println(v)
 	}
+	fmt.Printf("-----------\n\n")
 }
 
-// *** Unbuffered select w/ RECIEVE ***
+// *** Unbuffered select w/ RECEIVE ***
 func selectRecv() {
 	ch := make(chan string, 1)
 	go func() {
@@ -57,6 +63,7 @@ func selectRecv() {
 	case <-time.After(100 * time.Millisecond):
 		fmt.Println("Timed out")
 	}
+	fmt.Printf("-----------\n\n")
 }
 
 // *** Unbuffered select w/ SEND ***
@@ -73,8 +80,10 @@ func selectSend() {
 	case <-time.After(100 * time.Millisecond):
 		fmt.Println("timed out")
 	}
+	fmt.Printf("-----------\n\n")
 }
 
+// SelectDROP
 func selectDrop() {
 	ch := make(chan int, 5)
 
@@ -92,4 +101,5 @@ func selectDrop() {
 			fmt.Println("drop", i)
 		}
 	}
+	fmt.Printf("-----------\n\n")
 }

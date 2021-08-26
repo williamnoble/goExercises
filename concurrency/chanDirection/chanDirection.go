@@ -2,17 +2,27 @@ package main
 
 import "fmt"
 
-func ping(pings chan<- string, msg string) {
-	pings <- msg
+//   fROM THE CHAN   <- CHAN <- TO THE CHAN
+
+func transfer(channelA chan<- string, msg string) {
+	channelA <- msg
 }
-func pong(pings <-chan string, pongs chan<- string) {
-	msg := <-pings
-	pongs <- msg
+
+func pong(outputChannel chan<- string, channelA <-chan string) {
+	msg := <-channelA
+	outputChannel <- msg
 }
+
 func main() {
-	pings := make(chan string, 1)
-	pongs := make(chan string, 1)
-	ping(pings, "passed message")
-	pong(pings, pongs)
-	fmt.Println(<-pongs)
+	channelA := make(chan string, 1)
+	outputChannel := make(chan string, 1)
+
+	// send a msg to channel A. chan <- [We are sending TO the chan].
+	transfer(channelA, "Dear Channel A")
+
+	// Get the msg from channelA and then send to output channel.
+	// outputChannel chan <- [We are sending to the Chan and Receiving fROM chan A]
+	pong(outputChannel, channelA)
+	fmt.Println(<-outputChannel)
+
 }

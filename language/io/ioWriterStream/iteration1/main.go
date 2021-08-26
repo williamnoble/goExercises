@@ -17,6 +17,7 @@ func NewChannelWriter() *channelWriter {
 }
 
 func (c *channelWriter) Write(p []byte) (int, error) {
+	// wrote the contents of p, now p == 0
 	if len(p) == 0 {
 		return 0, nil
 	}
@@ -31,26 +32,32 @@ func (c *channelWriter) Write(p []byte) (int, error) {
 }
 
 func main() {
-	cw := NewChannelWriter()
+	// Create a 1024 []byte chan
+	chanWriter := NewChannelWriter()
+
+	// Write to that chan
 	go func() {
-		fmt.Fprint(cw, "Stream me!!!!")
+		fmt.Fprint(chanWriter, "Stream me")
 	}()
-	for c := range cw.Channel {
+
+	// Block. Read from the chan
+	for c := range chanWriter.Channel {
 		fmt.Printf("%c \n", c)
 	}
 
-	cw2 := NewChannelWriter()
+	chanWriterF := NewChannelWriter()
 	file, err := os.Open("./file.dat")
 	if err != nil {
 		fmt.Println("Error reading the file", err)
 		os.Exit(1)
 	}
-	_, err = io.Copy(cw2, file)
+	// io.Copy (dst, src) - Copy from file -> chanWriterF
+	_, err = io.Copy(chanWriterF, file)
 	if err != nil {
 		fmt.Println("Error copying", err)
 		os.Exit(1)
 	}
-	for c := range cw2.Channel {
+	for c := range chanWriterF.Channel {
 		fmt.Printf("%c\n", c)
 	}
 }

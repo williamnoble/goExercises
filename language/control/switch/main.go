@@ -13,22 +13,24 @@ func main() {
 	s = append(s, "statementOne", "statementTwo")
 	rand.Seed(time.Now().Unix())
 
-	sel := make(map[string]int)
-	sel["one"] = 0
-	sel["two"] = 0
-	for i := 0; i < 80; i ++ {
+	count := make(map[string]int)
+	count["one"] = 0
+	count["two"] = 0
+	for i := 0; i < 80; i++ {
 		choice := s[rand.Intn(len(s))]
 		if choice == "statementOne" {
-			sel["one"] += 1
+			count["one"] += 1
 		} else {
-			sel["two"] += 1
+			count["two"] += 1
 		}
 		if err := switcher(choice); err != nil {
 			log.Fatal(err.Error())
 		}
 	}
-	fmt.Printf("\n1st Statement: \t%d\n2nd Statment: \t%d\nTotal: \t\t%d",
-		sel["one"], sel["two"], sel["one"]+sel["two"])
+	fmt.Println("**TABLE**")
+	total := count["one"] + count["two"]
+	fmt.Printf("1st:\t%d\n2nd:\t%d\nTotal:\t%d",
+		count["one"], count["two"], total)
 }
 
 func switcher(s string) error {

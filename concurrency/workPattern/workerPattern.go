@@ -10,7 +10,7 @@ type Worker struct {
 	id int
 }
 
-func (w *Worker) process(c chan int) int {
+func (w *Worker) process(c <-chan int) int {
 	for {
 		data := <-c
 		fmt.Printf("worker %d got %d\n", w.id, data)
@@ -27,10 +27,9 @@ func main() {
 	for {
 		select {
 		case c <- rand.Int():
-			//
 		default:
 			fmt.Println("dropped")
-			time.Sleep(time.Millisecond * 50)
+			time.Sleep(time.Millisecond * 500)
 		}
 	}
 }

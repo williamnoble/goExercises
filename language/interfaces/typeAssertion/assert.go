@@ -4,20 +4,20 @@ import (
 	"fmt"
 )
 
-type Container []interface{}
+type unknown []interface{}
 
-func (c *Container) Put(elem interface{}) {
-	*c = append(*c, elem)
+func (c *unknown) Put(elem interface{}) {
+	//*c = append(*c, elem)
 }
 
-func (c *Container) Get() interface{} {
+func (c *unknown) Get() interface{} {
 	elem := (*c)[0]
 	//	*c = (*c)[1:]
 	return elem
 }
 
 func main() {
-	intContainer := &Container{}
+	intContainer := &unknown{}
 	intContainer.Put(7)
 	intContainer.Put(42)
 	intContainer.Put(84)

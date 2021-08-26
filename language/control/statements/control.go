@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
+	fmt.Printf("**COMPARISONS**\n\n")
 	Comparisons()
+
+	fmt.Printf("**Interface**\n\n")
 	Interfaces("Hi")
 	Interfaces(false)
 	Interfaces(293)
@@ -18,14 +21,20 @@ func main() {
 		r := rand.Intn(3)
 		Switches(r)
 	}
+
+	fmt.Printf("**FALLTHROUGH**\n\n")
 	Fallthrough()
+
+	fmt.Printf("**MULTIPLE SWITCHES**\n\n")
 	MultipleSwitches()
-	Comparison()
+
+	fmt.Printf("**GOTO**\n\n")
 	Goto()
 	TimesTable()
 }
 
 func Comparisons() {
+
 	a, b, c := 10, 20, 30
 	if a == 10 {
 		fmt.Println("'a' is = 10")
@@ -41,6 +50,7 @@ func Comparisons() {
 }
 
 func Interfaces(ex interface{}) {
+
 	var x interface{}
 	x = ex
 	switch i := x.(type) {
@@ -75,14 +85,14 @@ func Switches(x int) {
 }
 
 func Fallthrough() {
-	x := 1
+	x := 5
 	switch x {
 	case 0:
 		fmt.Println("f.zero")
 	case 1:
 		fmt.Println("f.one")
 		fallthrough
-	case 2:
+	case 2, 4, 5:
 		fmt.Println("f.two")
 	default:
 		fmt.Println("f.Default case")
@@ -90,6 +100,7 @@ func Fallthrough() {
 }
 
 func MultipleSwitches() {
+
 	x := 1
 	switch x {
 	case 0, 1:
@@ -107,7 +118,7 @@ func Comparison() {
 	if x < 1 {
 		fmt.Println("please supply a non-negative integer")
 	}
-
+	// begin
 	switch {
 	case (x >= 1 && x <= 10):
 		fmt.Println("Between ONE And TEN")
@@ -119,6 +130,7 @@ func Comparison() {
 }
 
 func Goto() {
+
 	var found rune
 
 	for i := 0; i < 10; i++ {
@@ -131,7 +143,7 @@ func Goto() {
 		}
 	}
 over:
-	fmt.Printf("Exceeded limit when encountered %s", string(found))
+	fmt.Printf("found %s\n\n", string(found))
 }
 
 func TimesTable() {

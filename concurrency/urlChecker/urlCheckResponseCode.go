@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	urls := []string{"https://rogerwelin.github.io/",
-		"https://golang.org/",
+	urls := []string{"https://golang.org/",
 		"https://news.ycombinator.com/",
 		"https://www.google.se/shouldbe404",
 		"https://www.cpan.org/"}

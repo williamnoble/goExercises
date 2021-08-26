@@ -6,34 +6,22 @@ import (
 	"os"
 )
 
-// This example uses a byte array as a buffer, obviously because we're over-writing the contents
-// on each loop we need to append to the end of the string on each pass
-// Interesting for loop (try to memorise)
 func main() {
 	if len(os.Args) != 2 {
 		fmt.Println("Please specify a path")
 		return
 	}
 
-	f, err := os.Open(os.Args[1])
-	if err != nil {
-		fmt.Println("error", err)
-		return
-	}
+	f, _ := os.Open(os.Args[1])
+	defer f.Close()
 
-	defer func() {
-		if err = f.Close(); err != nil {
-			fmt.Printf("error: %v", err)
-		}
-	}()
-
-	var b = make([]byte, 16)
+	var b = make([]byte, 4)
+	var err error
 
 	for n := 0; err == nil; {
 		n, err = f.Read(b)
 		if err == nil {
 			// Append most recent bytes to the end of the string
-
 			fmt.Print(string(b[:n]))
 		}
 	}

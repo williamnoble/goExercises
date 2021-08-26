@@ -6,7 +6,7 @@ import (
 )
 
 func printer(msg string, wg *sync.WaitGroup) {
-	wg.Done()
+	defer wg.Done()
 	fmt.Printf("Hello %s\n", msg)
 }
 

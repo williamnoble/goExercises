@@ -1,16 +1,25 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
 )
 
 func main() {
-	a := os.Args
+	args := os.Args
+	fmt.Println(calcArgs(args...))
+}
+
+// spread a variable number of args. We can pass zero or more strings. Note the output of os.Args is []string
+// thus we need to spread in our call to calcArgs(args...) vs calcArgs(args).
+func calcArgs(args ...string) int {
 	sum := 0
-	for i := 0; i < len(a); i++ {
-		v, _ := strconv.Atoi(a[i])
-		sum += v
+
+	for i := range args {
+		strconv.Atoi(args[i])
+		sum += i
 	}
-	println("sum: ", sum)
+
+	return sum
 }

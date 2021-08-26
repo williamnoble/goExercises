@@ -13,6 +13,13 @@ var (
 )
 
 func main() {
+	/*
+		1. Return the path for the executable (main)
+		2. Return the Directory housing the executable from 1
+		3. Create a file at 2
+		4. Do nothing of note.
+	*/
+
 	ex, err := os.Executable()
 	if err != nil {
 		panic(err)

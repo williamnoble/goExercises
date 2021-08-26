@@ -28,6 +28,8 @@ func main() {
 			fmt.Println(msg1)
 		case msg2 := <-c2:
 			fmt.Println(msg2)
+		case <-time.After(3 * time.Second):
+			return
 		}
 	}
 }

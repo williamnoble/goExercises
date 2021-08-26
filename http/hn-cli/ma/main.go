@@ -70,7 +70,6 @@ func getStoryData() []Story {
 		defer func(Body io.ReadCloser) {
 			_ = Body.Close()
 		}(resp.Body)
-
 		b, _ := ioutil.ReadAll(resp.Body)
 		err = json.Unmarshal(b, &story)
 

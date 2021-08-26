@@ -9,10 +9,10 @@ import (
 	"os"
 )
 
-// Create a Customer type
+// Customer changed json tags to emphasize tags.
 type Customer struct {
-	Name string
-	Age  int
+	Name string `json:"customer_name"`
+	Age  int    `json:"customer_age"`
 }
 
 // Implement a WriteJSON method that takes an io.Writer as the parameter.
@@ -35,6 +35,8 @@ func main() {
 
 	// We can then call the WriteJSON method using a buffer...
 	var buf bytes.Buffer
+	// Note we pass a bytes.Buffer because (b *Buffer) Write takes a
+	// pointer receiver.
 	err := c.WriteJSON(&buf)
 	if err != nil {
 		log.Fatal(err)

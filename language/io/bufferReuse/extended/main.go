@@ -6,22 +6,17 @@ import (
 )
 
 func main() {
-	var b = bytes.NewBuffer(make([]byte, 26))
-	var texts = []string{
-		`As he came into the window`,
-		`It was the sound of a crescendo
-		He came into her apartment`,
-		`He left the bloodstains on the carpet`,
-		`She ran underneath the table
-He could see she was unable
-So she ran into the bedroom
-She was struck down, it was her doom`,
-		`the end`,
-	}
-	for i := range texts {
-		b.Reset()
-		b.WriteString(texts[i])
-		fmt.Println("Length:", b.Len(), "\tCapacity:", b.Cap(), "Data:", b)
+	b := bytes.NewBuffer(make([]byte, 4)) // return *Buffer
 
+	texts := []string{
+		"into the wind",
+		"unto the fray",
+		"beneath the depths, I find a dragon",
+	}
+
+	for index := range texts {
+		b.Reset() // clear the buffer
+		b.WriteString(texts[index])
+		fmt.Printf("len: %d, cap: %d, data: %s.\n", b.Len(), b.Cap(), b)
 	}
 }

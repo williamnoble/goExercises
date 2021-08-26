@@ -10,11 +10,14 @@ import (
 func main() {
 	rawString := "Raw String Literal"
 	byteArray := []byte("Hello Byte-World")
+	arrayLiteral := [4]string{"ONE", "TWO", "THREE", "FOUR"}
 
 	// Concert between raw string literal and byte array
 	byteArrayToString := string(byteArray)
 	stringToBytes := []byte(rawString)
+	sliceFromArray := arrayLiteral[:]
 
+	_ = sliceFromArray
 	// Default, create a new buffer
 	bytesToBuffer := bytes.NewBuffer(byteArray)
 	fmt.Printf("byteArray: %s byteArrayToString: %s byteArrayToString: %s\n", byteArray, byteArrayToString, string(byteArray))
@@ -42,7 +45,7 @@ func main() {
 	scanner := bufio.NewScanner(reader)
 	scanner.Split(bufio.ScanWords)
 	for scanner.Scan() {
-		fmt.Print(scanner.Text(), " ")
+		fmt.Print(scanner.Text(), "-")
 	}
 
 	_ = rawString

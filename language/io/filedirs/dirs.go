@@ -20,7 +20,7 @@ func Operate() error {
 		return err
 	}
 
-	value := []byte("hellon")
+	value := []byte("hello")
 	count, err := f.Write(value)
 	if err != nil {
 		return err
