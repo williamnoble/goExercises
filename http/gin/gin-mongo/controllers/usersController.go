@@ -35,6 +35,9 @@ func (u Users) IndexHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Welcome to the Index page!"})
 }
 
+// Purpose was to learn Gin not implement a proper restAPI. This should validate the request paramaters,
+//check a user does not exist in the db, return the user id (not just success) and add authorizaiton to endpoints.
+
 func (u Users) CreateUserHandler(c *gin.Context) {
 	var user internal.User
 	err := c.BindJSON(&user)
@@ -48,7 +51,7 @@ func (u Users) CreateUserHandler(c *gin.Context) {
 	err = u.UsersModel.Create(user)
 	if err != nil {
 		c.JSON(500, gin.H{
-			"error": "somethign went wrong when creating a user" + err.Error(),
+			"error": "error when creating a user" + err.Error(),
 		},
 		)
 		return
