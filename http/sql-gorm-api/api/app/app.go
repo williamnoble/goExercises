@@ -7,9 +7,9 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
-	"github.com/williamnoble/goExercises/http/SqlGormRestfulApi/api/app/config"
-	"github.com/williamnoble/goExercises/http/SqlGormRestfulApi/api/app/handler"
-	"github.com/williamnoble/goExercises/http/SqlGormRestfulApi/api/app/model"
+	"github.com/williamnoble/goExercises/http/sql-gorm-api/api/app/config"
+	"github.com/williamnoble/goExercises/http/sql-gorm-api/api/app/handler"
+	"github.com/williamnoble/goExercises/http/sql-gorm-api/api/app/model"
 )
 
 type App struct {

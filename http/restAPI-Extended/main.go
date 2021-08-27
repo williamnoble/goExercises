@@ -81,7 +81,8 @@ func handleRequests() {
 	myRouter.HandleFunc("/article/{id}", deleteArticle).Methods("DELETE")
 	myRouter.HandleFunc("/article/{id}", returnSingleArticle)
 
-	log.Fatal(http.ListenAndServe(":10001", myRouter))
+	fmt.Println("listening on port 9000")
+	log.Fatal(http.ListenAndServe(":9000", myRouter))
 }
 
 func main() {

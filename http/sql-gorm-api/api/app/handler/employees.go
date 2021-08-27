@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
-	"github.com/williamnoble/goExercises/http/SqlGormRestfulApi/api/app/model"
+	"github.com/williamnoble/goExercises/http/sql-gorm-api/api/app/model"
 )
 
 func GetAllEmployees(db *gorm.DB, w http.ResponseWriter, _ *http.Request) {
