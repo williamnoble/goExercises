@@ -12,12 +12,12 @@ import (
 	"github.com/williamnoble/goExercises/http/sql-gorm-api/api/app/model"
 )
 
-type App struct {
+type Application struct {
 	Router *mux.Router
 	DB     *gorm.DB
 }
 
-func (a *App) Initialize(config *config.Config) {
+func (a *Application) Initialize(config *config.Config) {
 	dbURI := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=%s&parseTime=True",
 		config.DB.Username,
 		config.DB.Password,
@@ -37,7 +37,7 @@ func (a *App) Initialize(config *config.Config) {
 	a.Router = mux.NewRouter()
 	a.setRouters()
 }
-func (a *App) setRouters() {
+func (a *Application) setRouters() {
 	// Routing for handling the projects
 	a.Get("/employees", a.GetAllEmployees)
 	a.Post("/employees", a.CreateEmployee)
@@ -48,51 +48,51 @@ func (a *App) setRouters() {
 	a.Put("/employees/{title}/enable", a.EnableEmployee)
 }
 
-func (a *App) Get(path string, f func(w http.ResponseWriter, r *http.Request)) {
+func (a *Application) Get(path string, f func(w http.ResponseWriter, r *http.Request)) {
 	a.Router.HandleFunc(path, f).Methods("GET")
 }
 
-func (a *App) Post(path string, f func(w http.ResponseWriter, r *http.Request)) {
+func (a *Application) Post(path string, f func(w http.ResponseWriter, r *http.Request)) {
 	a.Router.HandleFunc(path, f).Methods("POST")
 }
 
-func (a *App) Put(path string, f func(w http.ResponseWriter, r *http.Request)) {
+func (a *Application) Put(path string, f func(w http.ResponseWriter, r *http.Request)) {
 	a.Router.HandleFunc(path, f).Methods("PUT")
 }
 
-func (a *App) Delete(path string, f func(w http.ResponseWriter, r *http.Request)) {
+func (a *Application) Delete(path string, f func(w http.ResponseWriter, r *http.Request)) {
 	a.Router.HandleFunc(path, f).Methods("DELETE")
 }
 
-func (a *App) GetAllEmployees(w http.ResponseWriter, r *http.Request) {
+func (a *Application) GetAllEmployees(w http.ResponseWriter, r *http.Request) {
 	handler.GetAllEmployees(a.DB, w, r)
 }
 
-func (a *App) CreateEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) CreateEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.CreateEmployee(a.DB, w, r)
 }
 
-func (a *App) GetEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) GetEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.GetEmployee(a.DB, w, r)
 }
 
-func (a *App) UpdateEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.UpdateEmployee(a.DB, w, r)
 }
 
-func (a *App) DeleteEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) DeleteEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.DeleteEmployee(a.DB, w, r)
 }
 
-func (a *App) DisableEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) DisableEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.DisableEmployee(a.DB, w, r)
 }
 
-func (a *App) EnableEmployee(w http.ResponseWriter, r *http.Request) {
+func (a *Application) EnableEmployee(w http.ResponseWriter, r *http.Request) {
 	handler.EnableEmployee(a.DB, w, r)
 }
 
 // Run the app on it's router
-func (a *App) Run(host string) {
+func (a *Application) Run(host string) {
 	log.Fatal(http.ListenAndServe(host, a.Router))
 }

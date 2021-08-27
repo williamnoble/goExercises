@@ -13,7 +13,6 @@ func main() {
 	a[len(a)-1] = ""   // Erase last element (write zero value).
 	a = a[:len(a)-1]   // Truncate slice. fmt.Println(a) // [A B E D]
 }
-
 ```
 
 ## Slow Version (Maintains Order)

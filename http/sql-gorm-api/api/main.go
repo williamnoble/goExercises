@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	config := config.GetConfig()
+	cfg := config.GetConfig()
 
-	app := &app.App{}
-	app.Initialize(config)
+	app := &app.Application{}
+	app.Initialize(cfg)
 	app.Run(":3000")
 }

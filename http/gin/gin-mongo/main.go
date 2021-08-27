@@ -14,7 +14,7 @@ func main() {
 		UsersModel: usersModel,
 	}
 	router := getRoutes(usersController)
-	router.Run("localhost:9090")
+	_ = router.Run("localhost:9090")
 
 }
 

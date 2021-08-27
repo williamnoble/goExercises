@@ -41,7 +41,7 @@ func main() {
 	log.Fatal(http.ListenAndServe(":4000", App.Routes))
 }
 
-func (a *application) listArticlesHandler(w http.ResponseWriter, r *http.Request) {
+func (a *application) listArticlesHandler(w http.ResponseWriter, _ *http.Request) {
 	fmt.Println("Listing all articles")
 	articles := a.Articles
 	if err := json.NewEncoder(w).Encode(articles); err != nil {
@@ -49,7 +49,7 @@ func (a *application) listArticlesHandler(w http.ResponseWriter, r *http.Request
 	}
 }
 
-func (a *application) deleteArticleHandler(w http.ResponseWriter, r *http.Request) {
+func (a *application) deleteArticleHandler(_ http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id := vars["id"]
 	for index, article := range a.Articles {
@@ -87,7 +87,7 @@ func (a *application) createArticleHandler(w http.ResponseWriter, r *http.Reques
 	}
 }
 
-func (a *application) indexHandler(w http.ResponseWriter, r *http.Request) {
+func (a *application) indexHandler(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprint(w, "/Index Page")
 }
 
