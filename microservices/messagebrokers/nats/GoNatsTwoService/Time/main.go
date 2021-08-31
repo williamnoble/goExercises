@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
+	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"
 	"time"
 
 	"github.com/nats-io/nats.go"
 
 	"github.com/golang/protobuf/proto"
-
-	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"
 )
 
 var nc *nats.Conn

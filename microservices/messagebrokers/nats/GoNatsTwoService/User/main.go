@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/golang/protobuf/proto"
 	"github.com/nats-io/nats.go"
 	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"

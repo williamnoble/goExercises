@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"natsEventPattern/Transport"
 	"time"
 
 	"github.com/nats-io/nats.go"

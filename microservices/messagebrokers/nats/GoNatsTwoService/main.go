@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
+	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"
 	"net/http"
 	"sync"
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsTwoService/Transport"
-
 	"github.com/gorilla/mux"
 	"github.com/nats-io/nats.go"
 )

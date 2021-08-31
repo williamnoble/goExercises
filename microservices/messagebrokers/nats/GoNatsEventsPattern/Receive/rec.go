@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-
-	natsProto "github.com/nats-io/nats/encoders/protobuf"
-	"github.com/williamnoble/goExercises/microservices/messagebrokers/nats/GoNatsEventsPattern/Transport"
+	natsProto "github.com/nats-io/nats.go/encoders/protobuf"
+	"natsEventPattern/Transport"
 
 	"github.com/nats-io/nats.go"
 )

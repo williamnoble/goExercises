@@ -4,10 +4,6 @@ go 1.15
 
 require (
 	fyne.io/fyne v1.4.3
-	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
-	github.com/alecthomas/units v0.0.0-20210208195552-ff826a37aa15 // indirect
-	github.com/aws/aws-lambda-go v1.24.0
-	github.com/aws/aws-sdk-go v1.38.55
 	github.com/cockroachdb/apd v1.1.0 // indirect
 	github.com/fortytw2/leaktest v1.3.0 // indirect
 	github.com/gin-gonic/gin v1.7.2
@@ -33,11 +29,12 @@ require (
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/stretchr/testify v1.7.0 // indirect
 	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125
+	github.com/twmb/franz-go v0.10.2
+	github.com/twmb/franz-go/pkg/kmsg v0.0.0-20210826221812-c6df11da978a
 	google.golang.org/grpc v1.38.0
-	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
 	gopkg.in/urfave/cli.v1 v1.20.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
-	gorm.io/driver/sqlite v1.1.4 // indirect
-	gorm.io/gorm v1.21.12 // indirect
+	gorm.io/driver/sqlite v1.1.4
+	gorm.io/gorm v1.21.12
 )
